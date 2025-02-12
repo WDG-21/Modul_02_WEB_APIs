@@ -4,6 +4,9 @@ const outputParagph = document.getElementById('output');
 
 // Function to handle form submission
 form.addEventListener('submit', (event) => {
+  // verhindert, dass die Seite nach dem Absenden des Formulars neu geladen wird.
+  // Standardmäßig würde das Formular eine GET- oder POST-Anfrage senden und die Seite neu laden.
+  // Da wir das Formular mit JavaScript verarbeiten, brauchen wir das nicht.
   event.preventDefault();
 
   // Get form field values

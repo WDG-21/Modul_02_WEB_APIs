@@ -22,10 +22,9 @@ selectionButtons.forEach((el) =>
 // Event-Listener für den Play-Button
 playButton.addEventListener('click', playRound);
 
-// Funktion zur Auswahl des Benutzers
 function selectChoice(choice) {
   userChoice = choice;
-  // Aktualisiert die Darstellung der Auswahl-Buttons
+
   selectionButtons.forEach((el) => {
     if (el.id === choice) {
       el.classList.add('border-4', 'border-yellow-500');

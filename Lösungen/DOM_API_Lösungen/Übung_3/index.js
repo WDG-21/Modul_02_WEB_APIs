@@ -26,7 +26,10 @@ addItemBtn.addEventListener('click', () => {
 });
 
 // Attach event to display an alert
-alertBtn.addEventListener('click', () => alert('Alert msg'));
+alertBtn.addEventListener('click', function () {
+  alert('Alert msg');
+});
+// alertBtn.addEventListener('click', () => alert('Alert msg'));
 
 // Attach event to output a message to the console
 consoleBtn.addEventListener('click', () => console.log('button was clicked'));
